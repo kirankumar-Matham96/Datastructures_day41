@@ -30,28 +30,28 @@ console.log(
 // 3. Extend the Prime Factorization Program to store all the Prime Factors of a
 // number n into an array and finally display the output.
 
-// let number = 25;
-// const tempNumber = number;
-// let primeFactors = [];
-// let isPrime = true;
+let number = 25;
+const tempNumber = number;
+let primeFactors = [];
+let isPrime = true;
 
-// for(let n=2;n<=number;n++){
-//     for(let i=2;i<=(i*i);i++){
-//         if(n%i == 0){
-//             isPrime = false;
-//         }
+for (let n = 2; n <= number; n++) {
+  for (let i = 2; i <= i * i; i++) {
+    if (n % i == 0) {
+      isPrime = false;
+    }
 
-//         if(isPrime){
-//             if(number%n == 0){
-//                 number = number/n;
-//                 primeFactors.push(n);
-//                 n=1;
-//             }
-//         }
-//         isPrime = true;
-//     }
-// }
-// console.log(...primeFactors);
+    if (isPrime) {
+      if (number % n == 0) {
+        number = number / n;
+        primeFactors.push(n);
+        n = 1;
+      }
+    }
+    isPrime = true;
+  }
+}
+console.log(...primeFactors);
 
 //4. Write a Program to show Sum of three Integer adds to ZERO
 
@@ -84,18 +84,12 @@ for (let i = 0; i <= 100; i++) {
        minimum times
  */
 
-let max_1 = 0,
-  sum_1 = 0;
-let max_2 = 0,
-  sum_2 = 0;
-let max_3 = 0,
-  sum_3 = 0;
-let max_4 = 0,
-  sum_4 = 0;
-let max_5 = 0,
-  sum_5 = 0;
-let max_6 = 0,
-  sum_6 = 0;
+let max_1 = 0, sum_1 = 0;
+let max_2 = 0, sum_2 = 0;
+let max_3 = 0, sum_3 = 0;
+let max_4 = 0, sum_4 = 0;
+let max_5 = 0, sum_5 = 0;
+let max_6 = 0, sum_6 = 0;
 let max_reached;
 let die_roll_track = new Map();
 
